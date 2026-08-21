@@ -1,75 +1,101 @@
 <div align="center">
 
-# Привет, я Ranavar 👋
+<img src="./assets/header.svg" width="100%" alt="Ranavar — Developer, Builder, AI-assisted engineering" />
 
-### Разработчик, который превращает идеи в работающие продукты
+<br />
 
-Создаю веб-приложения, API, автоматизации и игровые проекты. Использую современные AI-инструменты как полноценную часть процесса разработки — от исследования идеи и проектирования архитектуры до рефакторинга и поиска ошибок.
+**Превращаю идеи в работающие продукты — от первого прототипа до готового решения.**
 
-[![Profile views](https://komarev.com/ghpvc/?username=NikitaRTN&style=flat-square&color=6f42c1)](https://github.com/NikitaRTN)
+[![Profile](https://img.shields.io/badge/GitHub-NikitaRTN-181717?style=flat-square&logo=github)](https://github.com/NikitaRTN)
+[![Views](https://komarev.com/ghpvc/?username=NikitaRTN&style=flat-square&color=5E9FE8&label=profile+views)](https://github.com/NikitaRTN)
 
 </div>
 
-## Обо мне
+## `01` Обо мне
 
-- 💻 Работаю с **PHP, JavaScript, Java и Python**
-- 🌐 Разрабатываю веб-приложения и интеграции с API
-- ⚙️ Автоматизирую рутинные процессы и обработку данных
-- 🎮 Интересуюсь разработкой плагинов для Minecraft и игровых сервисов
-- 🤖 Применяю AI для прототипирования, анализа, отладки и улучшения кода
-- 📚 Постоянно изучаю новые технологии и закрепляю знания на практике
+Я разработчик, которому нравится **создавать, исследовать и доводить идеи до результата**. Работаю с веб-приложениями, API, автоматизацией и игровыми проектами. AI использую как инженерный инструмент: для анализа, проектирования, прототипирования, тестирования и рефакторинга.
 
-## Технологии
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### ⚡ Что создаю
+
+- Веб-приложения и backend-сервисы
+- API и интеграции между системами
+- Автоматизацию повторяющихся процессов
+- Игровые плагины и сервисы
+
+</td>
+<td width="50%" valign="top">
+
+### 🧭 Как работаю
+
+- Декомпозирую сложное на понятные шаги
+- Быстро проверяю гипотезы прототипами
+- Улучшаю архитектуру и читаемость кода
+- Постоянно учусь через реальные проекты
+
+</td>
+</tr>
+</table>
+
+## `02` Технологический стек
 
 <div align="center">
 
+### Languages
+
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000000)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+### Tools & Workflow
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white)
+![AI Assisted](https://img.shields.io/badge/AI_Assisted-6C63FF?style=for-the-badge&logo=openai&logoColor=white)
 
 </div>
 
-## Чем я занимаюсь
+## `03` Направления
 
 ```text
-Web & API          Проектирование приложений и интеграций
-Automation         Упрощение повторяющихся процессов
-Game Development   Плагины, игровые сервисы и эксперименты
-AI-assisted Dev    Быстрое прототипирование и качественный рефакторинг
+WEB & API          ████████████████░░░░  создание сервисов и интеграций
+AUTOMATION         ███████████████░░░░░  ускорение рутинных процессов
+GAME DEVELOPMENT   ████████████░░░░░░░░  плагины и игровые эксперименты
+AI ENGINEERING     █████████████████░░░  проектирование, анализ, рефакторинг
 ```
 
-## Мой подход к AI-разработке
+## `04` AI как часть разработки
 
-Для меня нейросети — не замена инженерному мышлению, а инструмент, который помогает быстрее проверять гипотезы и повышать качество результата. Я использую AI, чтобы:
+> **AI усиливает инженерное мышление, но не заменяет его.** Я использую нейросети, чтобы быстрее исследовать варианты, находить слабые места и превращать прототипы в поддерживаемые решения.
 
-- продумывать архитектуру и декомпозировать задачи;
-- создавать прототипы и развивать их до рабочих решений;
-- находить ошибки и разбирать сложный код;
-- писать тесты, документацию и улучшать читаемость;
-- изучать новые технологии через практические задачи.
+- `architecture` — проектирование и декомпозиция задач;
+- `debugging` — поиск причин ошибок и проверка гипотез;
+- `quality` — тесты, документация и рефакторинг;
+- `learning` — освоение технологий через практические задачи.
 
-## GitHub
+## `05` Сейчас в фокусе
 
-<div align="center">
-
-[![GitHub profile](https://img.shields.io/badge/Профиль-NikitaRTN-181717?style=for-the-badge&logo=github)](https://github.com/NikitaRTN)
-[![Repositories](https://img.shields.io/badge/Мои_репозитории-Открыть-6f42c1?style=for-the-badge&logo=github)](https://github.com/NikitaRTN?tab=repositories)
-
-Здесь я публикую проекты, эксперименты и результаты изучения новых технологий.
-
-</div>
-
----
+<table>
+<tr>
+<td align="center" width="33%"><b>BUILD</b><br/><sub>создавать полезное</sub></td>
+<td align="center" width="33%"><b>LEARN</b><br/><sub>углублять знания</sub></td>
+<td align="center" width="33%"><b>SHIP</b><br/><sub>доводить до релиза</sub></td>
+</tr>
+</table>
 
 <div align="center">
 
-### Открыт к интересным идеям, экспериментам и совместной разработке
+<br />
 
-Если вам понравился мой проект, буду рад ⭐ — это помогает проектам развиваться.
+### Есть интересная идея? Давайте превратим её в код.
+
+[![Repositories](https://img.shields.io/badge/Смотреть_проекты-5E9FE8?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NikitaRTN?tab=repositories)
+
+<sub>Если проект оказался полезным, звезда ⭐ — лучший способ поддержать его развитие.</sub>
 
 </div>
