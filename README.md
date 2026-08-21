@@ -68,13 +68,13 @@
 
 </div>
 
-## `04` 3D Contribution Graph
+## `04` 3D Contribution Landscape
 
 <div align="center">
 
-<img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution graph" />
+<img src="./assets/contrib3d.svg" width="100%" alt="Изометрическая 3D-карта активности" />
 
-<sub>График обновляется автоматически каждые 24 часа через GitHub Actions.</sub>
+<sub>Изометрическая карта коммитов за последние 12 месяцев — высота блока равна активности за день.</sub>
 
 </div>
 
