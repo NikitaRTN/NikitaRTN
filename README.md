@@ -60,31 +60,34 @@
 
 </div>
 
-## `03` Направления
+## `03` Focus Areas
 
-```text
-WEB & API          ████████████████░░░░  создание сервисов и интеграций
-AUTOMATION         ███████████████░░░░░  ускорение рутинных процессов
-GAME DEVELOPMENT   ████████████░░░░░░░░  плагины и игровые эксперименты
-AI ENGINEERING     █████████████████░░░  проектирование, анализ, рефакторинг
-```
+<div align="center">
 
-## `04` AI как часть разработки
+<img src="./assets/focus.svg" width="100%" alt="Focus areas: Web and API, Automation, Game Development, AI Engineering" />
+
+</div>
+
+## `04` 3D Contribution Graph
+
+<div align="center">
+
+<img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution graph" />
+
+<sub>График обновляется автоматически каждые 24 часа через GitHub Actions.</sub>
+
+</div>
+
+## `05` AI как часть разработки
 
 > **AI усиливает инженерное мышление, но не заменяет его.** Я использую нейросети, чтобы быстрее исследовать варианты, находить слабые места и превращать прототипы в поддерживаемые решения.
 
-- `architecture` — проектирование и декомпозиция задач;
-- `debugging` — поиск причин ошибок и проверка гипотез;
-- `quality` — тесты, документация и рефакторинг;
-- `learning` — освоение технологий через практические задачи.
-
-## `05` Сейчас в фокусе
-
 <table>
 <tr>
-<td align="center" width="33%"><b>BUILD</b><br/><sub>создавать полезное</sub></td>
-<td align="center" width="33%"><b>LEARN</b><br/><sub>углублять знания</sub></td>
-<td align="center" width="33%"><b>SHIP</b><br/><sub>доводить до релиза</sub></td>
+<td width="25%" align="center"><b>architecture</b><br/><sub>проектирование<br/>и декомпозиция</sub></td>
+<td width="25%" align="center"><b>debugging</b><br/><sub>поиск причин<br/>и проверка гипотез</sub></td>
+<td width="25%" align="center"><b>quality</b><br/><sub>тесты, документация<br/>и рефакторинг</sub></td>
+<td width="25%" align="center"><b>learning</b><br/><sub>освоение<br/>новых технологий</sub></td>
 </tr>
 </table>
 
