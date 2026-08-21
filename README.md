@@ -4,12 +4,10 @@
 
 **Превращаю идеи в работающие продукты — от первого прототипа до готового решения.**
 
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![AI Assisted](https://img.shields.io/badge/AI_Assisted-6C63FF?style=for-the-badge&logo=openai&logoColor=white)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=php,js,java,py,git,github,idea&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=php,js,java,py,git,github,idea&theme=light" alt="Tech Stack" />
+</picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github_dark/0-profile-details.svg" />
@@ -21,8 +19,8 @@
   <img src="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github/3-stats.svg" alt="GitHub Stats" />
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github_dark/1-repos-per-language.svg" />
-  <img src="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github/1-repos-per-language.svg" alt="Top Languages" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github_dark/4-productive-time.svg" />
+  <img src="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github/4-productive-time.svg" alt="Productive Time" />
 </picture>
 
 <br /><br />
