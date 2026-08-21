@@ -12,12 +12,17 @@
 ![AI Assisted](https://img.shields.io/badge/AI_Assisted-6C63FF?style=for-the-badge&logo=openai&logoColor=white)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=NikitaRTN&show_icons=true&hide_border=true&theme=tokyonight" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=NikitaRTN&show_icons=true&hide_border=true" alt="GitHub Stats" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github_dark/0-profile-details.svg" />
+  <img width="100%" src="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github/0-profile-details.svg" alt="Profile Details" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github_dark/3-stats.svg" />
+  <img src="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github/3-stats.svg" alt="GitHub Stats" />
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=NikitaRTN&layout=compact&hide_border=true&theme=tokyonight" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=NikitaRTN&layout=compact&hide_border=true" alt="Top Languages" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github_dark/1-repos-per-language.svg" />
+  <img src="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github/1-repos-per-language.svg" alt="Top Languages" />
 </picture>
 
 <br /><br />
