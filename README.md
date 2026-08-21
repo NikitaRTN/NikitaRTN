@@ -53,13 +53,14 @@ AI-assisted Dev    Быстрое прототипирование и качес
 - писать тесты, документацию и улучшать читаемость;
 - изучать новые технологии через практические задачи.
 
-## GitHub-статистика
+## GitHub
 
 <div align="center">
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=NikitaRTN&show_icons=true&theme=tokyonight&hide_border=true&locale=ru)
+[![GitHub profile](https://img.shields.io/badge/Профиль-NikitaRTN-181717?style=for-the-badge&logo=github)](https://github.com/NikitaRTN)
+[![Repositories](https://img.shields.io/badge/Мои_репозитории-Открыть-6f42c1?style=for-the-badge&logo=github)](https://github.com/NikitaRTN?tab=repositories)
 
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=NikitaRTN&layout=compact&theme=tokyonight&hide_border=true&locale=ru)
+Здесь я публикую проекты, эксперименты и результаты изучения новых технологий.
 
 </div>
 
