@@ -1,32 +1,37 @@
 <div align="center">
+  <img src="./assets/header.svg" width="100%" alt="Ranavar — backend, developer tools and MCP infrastructure" />
 
-<img src="./assets/header.svg" width="100%" alt="Ranavar — Developer, Builder, AI-assisted engineering" />
+  <a href="https://github.com/NikitaRTN/mcp-stack/actions/workflows/test.yml"><img alt="MCP Hub tests" src="https://github.com/NikitaRTN/mcp-stack/actions/workflows/test.yml/badge.svg" /></a>
+  <a href="https://github.com/NikitaRTN/NikitaRTN/actions/workflows/live-profile.yml"><img alt="Live profile data" src="https://github.com/NikitaRTN/NikitaRTN/actions/workflows/live-profile.yml/badge.svg" /></a>
+</div>
 
-**Превращаю идеи в работающие продукты — от первого прототипа до готового решения.**
+## Сейчас в работе
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=php,js,java,py,git,github,idea&theme=dark" />
-  <img src="https://skillicons.dev/icons?i=php,js,java,py,git,github,idea&theme=light" alt="Tech Stack" />
-</picture>
+### [MCP Hub 3](https://github.com/NikitaRTN/mcp-stack)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github_dark/0-profile-details.svg" />
-  <img width="100%" src="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github/0-profile-details.svg" alt="Profile Details" />
-</picture>
+Self-hosted панель для управления MCP-серверами: единая HTTPS-точка входа, OAuth, Tools Explorer, журнал вызовов в реальном времени и управление локальными процессами.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github_dark/3-stats.svg" />
-  <img src="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github/3-stats.svg" alt="GitHub Stats" />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github_dark/4-productive-time.svg" />
-  <img src="https://raw.githubusercontent.com/NikitaRTN/NikitaRTN/main/profile-summary-card-output/github/4-productive-time.svg" alt="Productive Time" />
-</picture>
+- backend без обязательных Python-зависимостей;
+- интерфейс на чистом JavaScript без build step;
+- тесты на Windows и Linux;
+- безопасные настройки по умолчанию.
 
-<br /><br />
+## Проверяемая активность
 
-[![Смотреть проекты](https://img.shields.io/badge/Смотреть_проекты-5E9FE8?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NikitaRTN?tab=repositories)
+<img src="./assets/live-stats.svg" width="100%" alt="Актуальная статистика профиля NikitaRTN из GitHub API" />
 
-[![Views](https://komarev.com/ghpvc/?username=NikitaRTN&style=flat-square&color=5E9FE8&label=profile+views)](https://github.com/NikitaRTN)
+Данные на карточке берутся напрямую из GitHub API и автоматически обновляются каждые 6 часов. Никаких вручную нарисованных чисел.
 
+## Публичные проекты и вклад
+
+- **[mcp-stack](https://github.com/NikitaRTN/mcp-stack)** — автор и разработчик MCP Hub 3.
+- **[SkHttp-Rework](https://github.com/RiseShieldDev/SkHttp-Rework)** — администрирование и разработка Java-аддона для HTTP/HTTPS в Minecraft Skript.
+- **[SkriptWebAPI](https://github.com/RiseShieldDev/SkriptWebAPI)** — администрирование и вклад в Java-проект организации RiseShieldDev.
+
+## Рабочий стек
+
+`Python` · `JavaScript` · `Java` · `Git` · `GitHub Actions` · `HTTP/SSE` · `OAuth` · `SQLite`
+
+<div align="center">
+  <sub>Профиль показывает только то, что можно проверить по открытым репозиториям и GitHub API.</sub>
 </div>
