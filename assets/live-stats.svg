@@ -8,12 +8,12 @@
 <rect class="surface" x="1" y="1" width="998" height="298" rx="16"/>
 <g class="text"><text class="value" x="32" y="42" font-size="20" font-weight="700">GitHub activity</text><circle cx="950" cy="35" r="6" fill="#46A171"/><text class="label" x="934" y="40" text-anchor="end" font-size="13">AUTO-SYNCED</text>
 <g transform="translate(32 68)">
-  <rect class="surface" width="220" height="116" rx="12"/><rect class="accent" width="5" height="116" rx="2.5"/><text class="label" x="24" y="34" font-size="13">ВКЛАД ЗА 365 ДНЕЙ</text><text class="value" x="24" y="84" font-size="42" font-weight="750">64</text>
-  <rect class="surface" x="238" width="220" height="116" rx="12"/><text class="label" x="262" y="34" font-size="13">КОММИТЫ ЗА 365 ДНЕЙ</text><text class="value" x="262" y="84" font-size="42" font-weight="750">62</text>
+  <rect class="surface" width="220" height="116" rx="12"/><rect class="accent" width="5" height="116" rx="2.5"/><text class="label" x="24" y="34" font-size="13">ВКЛАД ЗА 365 ДНЕЙ</text><text class="value" x="24" y="84" font-size="42" font-weight="750">62</text>
+  <rect class="surface" x="238" width="220" height="116" rx="12"/><text class="label" x="262" y="34" font-size="13">КОММИТЫ ЗА 365 ДНЕЙ</text><text class="value" x="262" y="84" font-size="42" font-weight="750">60</text>
   <rect class="surface" x="476" width="220" height="116" rx="12"/><text class="label" x="500" y="34" font-size="13">ПУБЛИЧНЫЕ РЕПОЗИТОРИИ</text><text class="value" x="500" y="84" font-size="42" font-weight="750">2</text>
   <rect class="surface" x="714" width="220" height="116" rx="12"/><text class="label" x="738" y="34" font-size="13">ПОДПИСЧИКИ</text><text class="value" x="738" y="84" font-size="42" font-weight="750">2</text>
 </g>
 <line x1="32" y1="212" x2="968" y2="212" stroke="#2783DE" stroke-opacity=".14"/>
-<text class="label" x="32" y="246" font-size="13">ПОСЛЕДНИЙ АКТИВНЫЙ РЕПОЗИТОРИЙ</text><text class="value" x="32" y="272" font-size="18" font-weight="650">mcp-stack · Python</text>
-<text class="label" x="968" y="246" text-anchor="end" font-size="13">ЗВЁЗДЫ: 1</text><text class="label" x="968" y="272" text-anchor="end" font-size="13">Обновлено 2026-09-02 20:48 UTC</text></g>
+<text class="label" x="32" y="246" font-size="13">ПОСЛЕДНИЙ АКТИВНЫЙ РЕПОЗИТОРИЙ</text><text class="value" x="32" y="272" font-size="18" font-weight="650">NikitaRTN · mixed</text>
+<text class="label" x="968" y="246" text-anchor="end" font-size="13">ЗВЁЗДЫ: 1</text><text class="label" x="968" y="272" text-anchor="end" font-size="13">Обновлено 2026-09-02 20:51 UTC</text></g>
 </svg>
