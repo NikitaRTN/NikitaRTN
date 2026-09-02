@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/header.svg" width="100%" alt="Ranavar — backend, developer tools and MCP infrastructure" />
+  <img src="./assets/profile-header.svg?v=20260903" width="100%" alt="Ranavar — backend, developer tools and MCP infrastructure" />
 
   <a href="https://github.com/NikitaRTN/mcp-stack/actions/workflows/test.yml"><img alt="MCP Hub tests" src="https://github.com/NikitaRTN/mcp-stack/actions/workflows/test.yml/badge.svg" /></a>
   <a href="https://github.com/NikitaRTN/NikitaRTN/actions/workflows/live-profile.yml"><img alt="Live profile data" src="https://github.com/NikitaRTN/NikitaRTN/actions/workflows/live-profile.yml/badge.svg" /></a>
