@@ -1,1 +1,45 @@
-²ø1šYì
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-labelledby="title desc">
+  <title id="title">Ranavar â€” Backend, Developer Tools, MCP Infrastructure</title>
+  <desc id="desc">Profile header for GitHub user NikitaRTN</desc>
+  <style>
+    :root { color-scheme: light dark; }
+    .bg { fill: #F9F8F7; }
+    .panel { fill: #FFFFFF; stroke: #E6E5E3; }
+    .eyebrow { fill: #2783DE; font: 700 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 2.4px; }
+    .name { fill: #2C2C2B; font: 800 58px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: -2px; }
+    .subtitle { fill: #7D7A75; font: 500 20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .chip { fill: #E5F2FC; stroke: #C8E3F8; }
+    .chipText { fill: #226FAA; font: 650 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .handle { fill: #7D7A75; font: 600 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .accent { fill: #2783DE; }
+    .accentSoft { fill: #5E9FE8; opacity: .18; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #191919; }
+      .panel { fill: #202020; stroke: rgba(255,255,255,.20); }
+      .name { fill: #F9F8F7; }
+      .subtitle, .handle { fill: rgba(255,255,255,.65); }
+      .chip { fill: #19364E; stroke: #275779; }
+      .chipText { fill: #8EC9F4; }
+    }
+  </style>
+  <rect class="bg" width="1000" height="260" rx="24"/>
+  <rect class="panel" x="1" y="1" width="998" height="258" rx="23"/>
+  <rect class="accent" x="0" y="0" width="9" height="260" rx="4.5"/>
+  <circle class="accentSoft" cx="901" cy="47" r="116"/>
+  <circle class="accentSoft" cx="954" cy="216" r="72"/>
+  <g transform="translate(54 43)">
+    <circle class="accent" cx="6" cy="-4" r="6"/>
+    <text class="eyebrow" x="22" y="1">BUILDING IN PUBLIC</text>
+    <text class="name" x="0" y="72">RANAVAR</text>
+    <text class="subtitle" x="2" y="108">Backend Â· Developer Tools Â· MCP Infrastructure</text>
+    <g transform="translate(2 134)">
+      <rect class="chip" width="88" height="34" rx="17"/>
+      <text class="chipText" x="44" y="22" text-anchor="middle">Python</text>
+      <rect class="chip" x="98" width="112" height="34" rx="17"/>
+      <text class="chipText" x="154" y="22" text-anchor="middle">JavaScript</text>
+      <rect class="chip" x="220" width="72" height="34" rx="17"/>
+      <text class="chipText" x="256" y="22" text-anchor="middle">Java</text>
+    </g>
+  </g>
+  <text class="handle" x="946" y="229" text-anchor="end">github.com/NikitaRTN</text>
+</svg>
