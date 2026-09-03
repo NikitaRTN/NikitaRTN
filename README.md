@@ -36,8 +36,8 @@
 ## 🚀 Проекты
 
 1. **[MCP Hub 3](https://github.com/NikitaRTN/mcp-stack)** — HTTPS gateway, MCP Studio, Tools Explorer, OAuth и live-журнал вызовов.
-2. **[SkHttp-Rework](https://github.com/RiseShieldDev/SkHttp-Rework)** — разработка и администрирование Java-аддона для HTTP/HTTPS в Minecraft Skript.
-3. **[SkriptWebAPI](https://github.com/RiseShieldDev/SkriptWebAPI)** — вклад в Java API и интеграции организации RiseShieldDev.
+2. **[SkHttp-Rework](https://github.com/NikitaRTN/SkHttp-Rework)** — разработка и администрирование Java-аддона для HTTP/HTTPS в Minecraft Skript.
+3. **[SkriptWebAPI](https://github.com/NikitaRTN/SkriptWebAPI)** — вклад в Java API и интеграции организации RiseShieldDev.
 
 <p align="center">
   <a href="https://github.com/NikitaRTN/mcp-stack"><img src="https://img.shields.io/github/stars/NikitaRTN/mcp-stack?style=for-the-badge&amp;logo=github&amp;color=7F00FF" alt="mcp-stack stars" /></a>
@@ -89,7 +89,7 @@
   <img src="https://img.shields.io/badge/Web%20UI-JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black" alt="Web UI: JavaScript" />
 </p>
 
-<p align="center"><sub>Процентная диаграмма скрыта: сторонние виджеты не учитывают Java-репозитории организации RiseShieldDev.</sub></p>
+<p align="center"><sub>Java-проекты теперь находятся в личном аккаунте; языки подписаны по их фактической роли.</sub></p>
 
 <p align="center">
   <img width="68%" src="https://streak-stats.demolab.com?user=NikitaRTN&amp;theme=tokyonight&amp;hide_border=true&amp;locale=ru" alt="GitHub contribution streak" />
