@@ -35,9 +35,11 @@
 
 ## 🚀 Проекты
 
-1. **[MCP Hub 3](https://github.com/NikitaRTN/mcp-stack)** — HTTPS gateway, MCP Studio, Tools Explorer, OAuth и live-журнал вызовов.
-2. **[SkHttp-Rework](https://github.com/NikitaRTN/SkHttp-Rework)** — разработка и администрирование Java-аддона для HTTP/HTTPS в Minecraft Skript.
-3. **[SkriptWebAPI](https://github.com/NikitaRTN/SkriptWebAPI)** — вклад в Java API и интеграции организации RiseShieldDev.
+1. **[OpenDoter](https://github.com/NikitaRTN/OpenDoter)** — PHP-интерфейс для просмотра матчей и профилей Dota 2.
+2. **[OpenDoter API](https://github.com/NikitaRTN/OpenDoter-API)** — API и парсер реплеев: Java parser + Python server.
+3. **[MCP Hub 3](https://github.com/NikitaRTN/mcp-stack)** — HTTPS gateway, MCP Studio, Tools Explorer, OAuth и live-журнал вызовов.
+4. **[SkHttp-Rework](https://github.com/NikitaRTN/SkHttp-Rework)** — Java-аддон для HTTP/HTTPS в Minecraft Skript.
+5. **[SkriptWebAPI](https://github.com/NikitaRTN/SkriptWebAPI)** — Java API и web-интеграции для Skript.
 
 <p align="center">
   <a href="https://github.com/NikitaRTN/mcp-stack"><img src="https://img.shields.io/github/stars/NikitaRTN/mcp-stack?style=for-the-badge&amp;logo=github&amp;color=7F00FF" alt="mcp-stack stars" /></a>
@@ -54,7 +56,7 @@
 ## 🛠️ Технологии
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,python,js,html,css,git,github,sqlite&amp;theme=dark" alt="Languages and tools" />
+  <img src="https://skillicons.dev/icons?i=java,php,python,js,html,css,git,github,sqlite&amp;theme=dark" alt="Languages and tools" />
 </p>
 
 <p align="center">
