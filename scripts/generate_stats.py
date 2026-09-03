@@ -25,78 +25,104 @@ def request(url: str, payload: dict | None = None) -> dict:
         return json.load(response)
 
 
-user = request("https://api.github.com/users/" + LOGIN)
-
 query = """
 query($login: String!) {
   user(login: $login) {
     followers { totalCount }
     contributionsCollection {
-      contributionCalendar { totalContributions }
+      contributionCalendar {
+        totalContributions
+        weeks { contributionDays { contributionCount date } }
+      }
       totalCommitContributions
-      totalIssueContributions
-      totalPullRequestContributions
-      totalPullRequestReviewContributions
     }
     repositories(first: 100, privacy: PUBLIC, ownerAffiliations: OWNER,
       orderBy: {field: PUSHED_AT, direction: DESC}) {
       totalCount
-      nodes { name stargazerCount forkCount pushedAt isFork primaryLanguage { name } }
+      nodes { name stargazerCount pushedAt primaryLanguage { name } }
     }
   }
 }
 """
-graph = request(
-    "https://api.github.com/graphql",
-    {"query": query, "variables": {"login": LOGIN}},
-)
+graph = request("https://api.github.com/graphql", {"query": query, "variables": {"login": LOGIN}})
 if graph.get("errors"):
     raise RuntimeError(json.dumps(graph["errors"], ensure_ascii=False))
+
 profile = graph["data"]["user"]
-contrib = profile["contributionsCollection"]
+collection = profile["contributionsCollection"]
+calendar = collection["contributionCalendar"]
 repos = profile["repositories"]["nodes"]
-
-public_repos = profile["repositories"]["totalCount"]
-followers = profile["followers"]["totalCount"]
-contributions = contrib["contributionCalendar"]["totalContributions"]
-commits = contrib["totalCommitContributions"]
+projects = [repo for repo in repos if repo["name"].lower() != LOGIN.lower()]
+latest = projects[0] if projects else (repos[0] if repos else None)
+updated = datetime.now(timezone.utc).strftime("%d %b %Y · %H:%M UTC")
+latest_name = html.escape(latest["name"]) if latest else "No public project"
+latest_lang = html.escape((latest.get("primaryLanguage") or {}).get("name", "Mixed")) if latest else "—"
+latest_date = latest["pushedAt"][:10] if latest else "—"
 total_stars = sum(repo["stargazerCount"] for repo in repos)
-latest = repos[0] if repos else None
-latest_name = latest["name"] if latest else "—"
-latest_lang = (latest.get("primaryLanguage") or {}).get("name", "mixed") if latest else "—"
-updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-
-values = {
-    "__CONTRIBUTIONS__": str(contributions),
-    "__COMMITS__": str(commits),
-    "__REPOS__": str(public_repos),
-    "__FOLLOWERS__": str(followers),
-    "__STARS__": str(total_stars),
-    "__LATEST__": html.escape(latest_name),
-    "__LANG__": html.escape(latest_lang),
-    "__UPDATED__": updated,
-    "__LOGIN__": html.escape(user["login"]),
+metrics = {
+    "__CONTRIBUTIONS__": calendar["totalContributions"],
+    "__COMMITS__": collection["totalCommitContributions"],
+    "__REPOS__": profile["repositories"]["totalCount"],
+    "__STARS__": total_stars,
+    "__FOLLOWERS__": profile["followers"]["totalCount"],
 }
 
-template = """<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
-<title id="title">Live GitHub statistics for __LOGIN__</title>
-<desc id="desc">Automatically generated from the GitHub API</desc>
+
+def heat_color(count: int) -> str:
+    if count == 0:
+        return "#151D31"
+    if count == 1:
+        return "#173D48"
+    if count <= 3:
+        return "#20636C"
+    if count <= 6:
+        return "#2EA4AA"
+    return "#4FE1E8"
+
+
+heatmap: list[str] = []
+active_days = 0
+for column, week in enumerate(calendar["weeks"][-5:]):
+    for row, day in enumerate(week["contributionDays"]):
+        count = day["contributionCount"]
+        active_days += int(count > 0)
+        x, y = 827 + column * 45, 276 + row * 15
+        title = f"{day['date']}: {count} contributions"
+        heatmap.append(f'<rect x="{x}" y="{y}" width="34" height="11" rx="3" fill="{heat_color(count)}"><title>{title}</title></rect>')
+template = """<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+<title id="title">Live GitHub signal for NikitaRTN</title>
+<desc id="desc">Verified GitHub API metrics and a five-week contribution heatmap</desc>
 <defs>
-  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2783DE"/><stop offset="1" stop-color="#5E9FE8"/></linearGradient>
-  <style>.text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.surface{fill:#F9F8F7;stroke:#E6E5E3}.label{fill:#7D7A75}.value{fill:#2C2C2B}.accent{fill:url(#accent)}@media(prefers-color-scheme:dark){.surface{fill:#202020;stroke:rgba(255,255,255,.2)}.label{fill:rgba(255,255,255,.65)}.value{fill:#fff}}</style>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070B14"/><stop offset="1" stop-color="#10152A"/></linearGradient>
+  <linearGradient id="accent"><stop stop-color="#4FE1E8"/><stop offset="1" stop-color="#806CFF"/></linearGradient>
+  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#AFC4FF" stroke-opacity=".045"/></pattern>
+  <style>.sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}.mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}.white{fill:#F7FAFF}.muted{fill:#8C9AB9}.cyan{fill:#4FE1E8}.violet{fill:#9A8CFF}.card{fill:#0E1628;stroke:#263453}.rule{stroke:#2A395A}</style>
 </defs>
-<rect class="surface" x="1" y="1" width="998" height="298" rx="16"/>
-<g class="text"><text class="value" x="32" y="42" font-size="20" font-weight="700">GitHub activity</text><circle cx="950" cy="35" r="6" fill="#46A171"/><text class="label" x="934" y="40" text-anchor="end" font-size="13">AUTO-SYNCED</text>
-<g transform="translate(32 68)">
-  <rect class="surface" width="220" height="116" rx="12"/><rect class="accent" width="5" height="116" rx="2.5"/><text class="label" x="24" y="34" font-size="13">ВКЛАД ЗА 365 ДНЕЙ</text><text class="value" x="24" y="84" font-size="42" font-weight="750">__CONTRIBUTIONS__</text>
-  <rect class="surface" x="238" width="220" height="116" rx="12"/><text class="label" x="262" y="34" font-size="13">КОММИТЫ ЗА 365 ДНЕЙ</text><text class="value" x="262" y="84" font-size="42" font-weight="750">__COMMITS__</text>
-  <rect class="surface" x="476" width="220" height="116" rx="12"/><text class="label" x="500" y="34" font-size="13">ПУБЛИЧНЫЕ РЕПОЗИТОРИИ</text><text class="value" x="500" y="84" font-size="42" font-weight="750">__REPOS__</text>
-  <rect class="surface" x="714" width="220" height="116" rx="12"/><text class="label" x="738" y="34" font-size="13">ПОДПИСЧИКИ</text><text class="value" x="738" y="84" font-size="42" font-weight="750">__FOLLOWERS__</text>
+<rect width="1200" height="420" rx="24" fill="url(#bg)"/><rect x="1" y="1" width="1198" height="418" rx="23" fill="none" stroke="#26314D"/><rect width="1200" height="420" rx="24" fill="url(#grid)"/>
+<g class="mono"><text class="cyan" x="42" y="48" font-size="12" font-weight="700" letter-spacing="2">LIVE / GITHUB SIGNAL</text><text class="muted" x="42" y="72" font-size="11">SOURCE: REST + GRAPHQL API</text><circle cx="963" cy="45" r="4" fill="#4ADE80"/><text class="muted" x="977" y="49" font-size="11">AUTO-SYNCED</text><text class="muted" x="1158" y="49" text-anchor="end" font-size="11">__UPDATED__</text></g>
+<g transform="translate(42 96)">
+  <g><rect class="card" width="207" height="116" rx="14"/><rect width="207" height="3" rx="1.5" fill="#4FE1E8"/><text class="mono muted" x="20" y="34" font-size="10" letter-spacing="1">CONTRIBUTIONS / 365D</text><text class="sans white" x="20" y="88" font-size="44" font-weight="750">__CONTRIBUTIONS__</text></g>
+  <g transform="translate(225)"><rect class="card" width="207" height="116" rx="14"/><rect width="207" height="3" rx="1.5" fill="#62C7ED"/><text class="mono muted" x="20" y="34" font-size="10" letter-spacing="1">COMMITS / 365D</text><text class="sans white" x="20" y="88" font-size="44" font-weight="750">__COMMITS__</text></g>
+  <g transform="translate(450)"><rect class="card" width="207" height="116" rx="14"/><rect width="207" height="3" rx="1.5" fill="#806CFF"/><text class="mono muted" x="20" y="34" font-size="10" letter-spacing="1">PUBLIC REPOSITORIES</text><text class="sans white" x="20" y="88" font-size="44" font-weight="750">__REPOS__</text></g>
+  <g transform="translate(675)"><rect class="card" width="207" height="116" rx="14"/><rect width="207" height="3" rx="1.5" fill="#9A8CFF"/><text class="mono muted" x="20" y="34" font-size="10" letter-spacing="1">STARS RECEIVED</text><text class="sans white" x="20" y="88" font-size="44" font-weight="750">__STARS__</text></g>
+  <g transform="translate(900)"><rect class="card" width="216" height="116" rx="14"/><rect width="216" height="3" rx="1.5" fill="#C0B7FF"/><text class="mono muted" x="20" y="34" font-size="10" letter-spacing="1">FOLLOWERS</text><text class="sans white" x="20" y="88" font-size="44" font-weight="750">__FOLLOWERS__</text></g>
 </g>
-<line x1="32" y1="212" x2="968" y2="212" stroke="#2783DE" stroke-opacity=".14"/>
-<text class="label" x="32" y="246" font-size="13">ПОСЛЕДНИЙ АКТИВНЫЙ РЕПОЗИТОРИЙ</text><text class="value" x="32" y="272" font-size="18" font-weight="650">__LATEST__ · __LANG__</text>
-<text class="label" x="968" y="246" text-anchor="end" font-size="13">ЗВЁЗДЫ: __STARS__</text><text class="label" x="968" y="272" text-anchor="end" font-size="13">Обновлено __UPDATED__</text></g>
+"""
+template += """
+<g><rect class="card" x="42" y="238" width="710" height="144" rx="16"/><text class="mono violet" x="66" y="270" font-size="10" font-weight="700" letter-spacing="1.4">LATEST ACTIVE PROJECT</text><text class="sans white" x="66" y="317" font-size="30" font-weight="750">__LATEST__</text><text class="mono muted" x="66" y="350" font-size="11">PRIMARY LANGUAGE</text><text class="mono cyan" x="196" y="350" font-size="11">__LANG__</text><line class="rule" x1="292" y1="340" x2="292" y2="356"/><text class="mono muted" x="314" y="350" font-size="11">LAST PUSH __PUSHED__</text><text class="mono muted" x="728" y="350" text-anchor="end" font-size="10">PROFILE REPOSITORY EXCLUDED</text></g>
+<g><rect class="card" x="774" y="238" width="384" height="144" rx="16"/><text class="mono cyan" x="798" y="270" font-size="10" font-weight="700" letter-spacing="1.4">CONTRIBUTION HEATMAP / 5W</text><text class="mono muted" x="1134" y="270" text-anchor="end" font-size="10">__ACTIVE_DAYS__ ACTIVE DAYS</text>__HEATMAP__</g>
+<g class="mono"><text class="muted" x="42" y="405" font-size="10">VERIFIED PUBLIC DATA · GENERATED BY GITHUB ACTIONS</text><text class="muted" x="1158" y="405" text-anchor="end" font-size="10">github.com/NikitaRTN</text></g>
 </svg>"""
+
+values = {
+    **{marker: str(value) for marker, value in metrics.items()},
+    "__UPDATED__": updated,
+    "__LATEST__": latest_name,
+    "__LANG__": latest_lang,
+    "__PUSHED__": latest_date,
+    "__ACTIVE_DAYS__": str(active_days),
+    "__HEATMAP__": "".join(heatmap),
+}
 for marker, value in values.items():
     template = template.replace(marker, value)
 
