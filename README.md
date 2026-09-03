@@ -1,55 +1,95 @@
-<div align="center">
-  <img src="./assets/hero.svg?v=20260903-2" width="100%" alt="Ranavar — backend systems, developer tools and MCP infrastructure" />
-  <br /><br />
-  <a href="https://github.com/NikitaRTN/mcp-stack/actions/workflows/test.yml"><img alt="MCP Hub tests" src="https://img.shields.io/github/actions/workflow/status/NikitaRTN/mcp-stack/test.yml?branch=main&style=flat-square&label=tests&labelColor=0E1628&color=4FE1E8" /></a>
-  <a href="https://github.com/NikitaRTN/NikitaRTN/actions/workflows/live-profile.yml"><img alt="Live GitHub signal" src="https://img.shields.io/github/actions/workflow/status/NikitaRTN/NikitaRTN/live-profile.yml?branch=main&style=flat-square&label=live%20telemetry&labelColor=0E1628&color=806CFF" /></a>
-  <a href="https://github.com/NikitaRTN/mcp-stack/blob/main/LICENSE"><img alt="MIT License" src="https://img.shields.io/github/license/NikitaRTN/mcp-stack?style=flat-square&labelColor=0E1628&color=806CFF" /></a>
-</div>
+<!-- Animated header -->
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;height=190&amp;color=0:7F00FF,100:00C6FF&amp;text=Hey,%20I'm%20Ranavar!%20👋&amp;fontColor=ffffff&amp;fontSize=44&amp;fontAlignY=36&amp;animation=fadeIn&amp;desc=Backend%20•%20Developer%20Tools%20•%20MCP%20Infrastructure&amp;descAlignY=58&amp;descSize=17" alt="Hey, I'm Ranavar" />
+</p>
 
-## `01 / CURRENT BUILD`
+<!-- Typing intro -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=600&amp;size=23&amp;pause=900&amp;duration=2800&amp;color=6C63FF&amp;center=true&amp;vCenter=true&amp;width=760&amp;lines=Building+backend+systems;Creating+developer+tools;Working+on+MCP+Hub+3;Shipping+verifiable+software+in+public" alt="Typing introduction" />
+</p>
 
-### [MCP Hub 3](https://github.com/NikitaRTN/mcp-stack) — control plane для MCP-сервисов
-
-Self-hosted рабочее пространство для запуска, публикации и наблюдения за локальными и удалёнными MCP-серверами.
-
-- единая HTTPS-точка входа через Caddy;
-- MCP Studio и Tools Explorer без отдельного frontend build step;
-- Token, OAuth introspection и OAuth Client Credentials;
-- потоковый JSON-RPC, SSE-события и журнал вызовов в SQLite/WAL;
-- backend на стандартной библиотеке Python, тесты на Windows и Linux.
-
-<div align="center">
-  <a href="https://github.com/NikitaRTN/mcp-stack"><b>Открыть исходный код →</b></a>
-</div>
-
-<br />
-<img src="./assets/project-map.svg?v=20260903-2" width="100%" alt="Архитектура MCP Hub 3" />
-
-## `02 / LIVE SIGNAL`
-
-<img src="./assets/live-stats.svg" width="100%" alt="Live GitHub API statistics for NikitaRTN" />
-
-<sub>Карточка генерируется из GitHub REST + GraphQL API каждые 6 часов. Heatmap, вклад, коммиты, репозитории, звёзды и подписчики не редактируются вручную.</sub>
-
-## `03 / SELECTED WORK`
-
-| Проект | Роль | Проверяемый фокус |
-|:--|:--|:--|
-| **[mcp-stack](https://github.com/NikitaRTN/mcp-stack)** | Автор | Python backend, JS UI, OAuth, SSE, SQLite, GitHub Actions |
-| **[SkHttp-Rework](https://github.com/RiseShieldDev/SkHttp-Rework)** | Администратор и разработчик | Java-аддон для HTTP/HTTPS в Minecraft Skript |
-| **[SkriptWebAPI](https://github.com/RiseShieldDev/SkriptWebAPI)** | Администратор и контрибьютор | Java API и интеграции для Skript |
-
-## `04 / ENGINEERING PRINCIPLES`
-
-- **Inspectable by default** — запросы, процессы и ошибки должны быть видимы.
-- **Secure by default** — закрыто, пока пользователь явно не опубликовал сервис.
-- **Dependency-light** — зависимость должна оправдывать своё присутствие.
-- **Local-first** — контроль и данные остаются у владельца инфраструктуры.
-
-## `05 / WORKING STACK`
-
-`Python` · `JavaScript` · `Java` · `GitHub Actions` · `HTTP/2` · `SSE` · `OAuth` · `SQLite/WAL`
+<p align="center">
+  <a href="https://github.com/NikitaRTN/mcp-stack/actions/workflows/test.yml"><img src="https://img.shields.io/github/actions/workflow/status/NikitaRTN/mcp-stack/test.yml?branch=main&amp;style=for-the-badge&amp;logo=githubactions&amp;logoColor=white&amp;label=Tests&amp;color=6C63FF" alt="Tests" /></a>
+  <a href="https://github.com/NikitaRTN/mcp-stack/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NikitaRTN/mcp-stack?style=for-the-badge&amp;color=00AEEF" alt="MIT License" /></a>
+  <img src="https://komarev.com/ghpvc/?username=NikitaRTN&amp;style=for-the-badge&amp;color=7F00FF&amp;label=PROFILE+VIEWS" alt="Profile views" />
+</p>
 
 ---
 
-<div align="center"><sub>Все числа и технические заявления привязаны к открытым репозиториям или GitHub API.</sub></div>
+<p align="center">
+  <img src="https://img.shields.io/badge/👋-About%20Me-7F00FF?style=for-the-badge" alt="About Me" />
+</p>
+
+## 👨‍💻 Обо мне
+
+- 🔭 Сейчас создаю **[MCP Hub 3](https://github.com/NikitaRTN/mcp-stack)** — self-hosted панель управления MCP-сервисами.
+- 🧩 Работаю с backend-системами, developer tools и инфраструктурой автоматизации.
+- 🔐 В проектах делаю упор на OAuth, безопасные настройки и наблюдаемость.
+- ⚡ Предпочитаю лёгкие решения: Python stdlib, чистый JavaScript и минимум лишних зависимостей.
+
+---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🚀-Projects-FF7A00?style=for-the-badge" alt="Projects" />
+</p>
+
+## 🚀 Проекты
+
+1. **[MCP Hub 3](https://github.com/NikitaRTN/mcp-stack)** — HTTPS gateway, MCP Studio, Tools Explorer, OAuth и live-журнал вызовов.
+2. **[SkHttp-Rework](https://github.com/RiseShieldDev/SkHttp-Rework)** — разработка и администрирование Java-аддона для HTTP/HTTPS в Minecraft Skript.
+3. **[SkriptWebAPI](https://github.com/RiseShieldDev/SkriptWebAPI)** — вклад в Java API и интеграции организации RiseShieldDev.
+
+<p align="center">
+  <a href="https://github.com/NikitaRTN/mcp-stack"><img src="https://img.shields.io/github/stars/NikitaRTN/mcp-stack?style=for-the-badge&amp;logo=github&amp;color=7F00FF" alt="mcp-stack stars" /></a>
+  <a href="https://github.com/NikitaRTN/mcp-stack"><img src="https://img.shields.io/github/repo-size/NikitaRTN/mcp-stack?style=for-the-badge&amp;color=00AEEF" alt="mcp-stack size" /></a>
+  <a href="https://github.com/NikitaRTN/mcp-stack/commits/main"><img src="https://img.shields.io/github/last-commit/NikitaRTN/mcp-stack?style=for-the-badge&amp;color=FF7A00" alt="mcp-stack last commit" /></a>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🛠️-Technology%20Stack-00AEEF?style=for-the-badge" alt="Technology Stack" />
+</p>
+
+## 🛠️ Технологии
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,js,java,html,css,git,github,sqlite&amp;theme=dark" alt="Languages and tools" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/OAuth-2F2F2F?style=flat-square&amp;logo=auth0&amp;logoColor=white" alt="OAuth" />
+  <img src="https://img.shields.io/badge/HTTP%2F2-005C9C?style=flat-square" alt="HTTP/2" />
+  <img src="https://img.shields.io/badge/SSE-00897B?style=flat-square" alt="Server-Sent Events" />
+  <img src="https://img.shields.io/badge/Caddy-1F88C0?style=flat-square&amp;logo=caddy&amp;logoColor=white" alt="Caddy" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&amp;logo=githubactions&amp;logoColor=white" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/Windows-0078D4?style=flat-square&amp;logo=windows&amp;logoColor=white" alt="Windows" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&amp;logo=linux&amp;logoColor=black" alt="Linux" />
+</p>
+
+---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/📊-GitHub%20Stats-6C63FF?style=for-the-badge" alt="GitHub Stats" />
+</p>
+
+## 📊 GitHub в цифрах
+
+<p align="center">
+  <img width="96%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NikitaRTN&amp;theme=tokyonight" alt="GitHub contribution timeline" />
+</p>
+
+<p align="center">
+  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=NikitaRTN&amp;theme=tokyonight" alt="GitHub statistics" />
+  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=NikitaRTN&amp;theme=tokyonight" alt="Repositories per language" />
+</p>
+
+<p align="center">
+  <img width="68%" src="https://streak-stats.demolab.com?user=NikitaRTN&amp;theme=tokyonight&amp;hide_border=true&amp;locale=ru" alt="GitHub contribution streak" />
+</p>
+
+<p align="center"><sub>Статистика и статусы загружаются динамически из GitHub при открытии профиля.</sub></p>
+
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:00C6FF,100:7F00FF&amp;height=100&amp;section=footer" alt="Footer" />
+</p>
