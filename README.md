@@ -54,7 +54,7 @@
 ## 🛠️ Технологии
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,java,html,css,git,github,sqlite&amp;theme=dark" alt="Languages and tools" />
+  <img src="https://skillicons.dev/icons?i=java,python,js,html,css,git,github,sqlite&amp;theme=dark" alt="Languages and tools" />
 </p>
 
 <p align="center">
@@ -80,9 +80,16 @@
 </p>
 
 <p align="center">
-  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=NikitaRTN&amp;theme=tokyonight" alt="GitHub statistics" />
-  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=NikitaRTN&amp;theme=tokyonight" alt="Repositories per language" />
+  <img width="56%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=NikitaRTN&amp;theme=tokyonight" alt="GitHub statistics" />
 </p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Main%20stack-Java-ED8B00?style=for-the-badge&amp;logo=openjdk&amp;logoColor=white" alt="Main stack: Java" />
+  <img src="https://img.shields.io/badge/MCP%20Hub-Python-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white" alt="MCP Hub backend: Python" />
+  <img src="https://img.shields.io/badge/Web%20UI-JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black" alt="Web UI: JavaScript" />
+</p>
+
+<p align="center"><sub>Процентная диаграмма скрыта: сторонние виджеты не учитывают Java-репозитории организации RiseShieldDev.</sub></p>
 
 <p align="center">
   <img width="68%" src="https://streak-stats.demolab.com?user=NikitaRTN&amp;theme=tokyonight&amp;hide_border=true&amp;locale=ru" alt="GitHub contribution streak" />
