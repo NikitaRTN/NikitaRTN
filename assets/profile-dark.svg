@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="190" viewBox="0 0 800 190" role="img" aria-labelledby="title desc">
+  <title id="title">Ranavar</title>
+  <desc id="desc">Тёмный баннер профиля NikitaRTN с голубым типографическим знаком.</desc>
+  <rect width="800" height="190" rx="12" fill="#111D2F"/>
+  <path d="M0 158H800M640 0V190M720 0V190" stroke="#23334A"/>
+  <rect x="36" y="36" width="44" height="5" rx="2.5" fill="#79B4FF"/>
+  <text x="32" y="133" fill="#F0F6FC" font-family="Arial, Helvetica, sans-serif" font-size="84" font-weight="700" letter-spacing="-4">Ranavar<tspan fill="#79B4FF">.</tspan></text>
+  <g fill="none" stroke="#79B4FF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m646 67-26 28 26 28M728 67l26 28-26 28"/>
+    <path d="m699 58-27 74" stroke="#A3AFF4"/>
+  </g>
+</svg>
