@@ -17,7 +17,7 @@
 
 ### [MCP Hub 3 ↗](https://github.com/NikitaRTN/mcp-stack)
 
-Self-hosted рабочее пространство для MCP-сервисов: управление процессами, HTTPS через Caddy, OAuth, исследование инструментов и журнал вызовов в реальном времени.
+Self-hosted рабочее пространство для MCP-сервисов: управление процессами, HTTPS через Caddy, OAuth, Bearer, исследование инструментов и журнал вызовов в реальном времени.
 
 `Python` · `JavaScript` · `SQLite`
 
